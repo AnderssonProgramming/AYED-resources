@@ -1,0 +1,23 @@
+22
+saque máximo
+inserte 1
+saque máximo
+inserte 0
+inserte 3
+saque máximo
+inserte 2
+inserte 4
+saque máximo
+saque máximo
+inserte 5
+inserte 8
+saque máximo
+saque máximo
+inserte 8
+saque máximo
+inserte 2
+saque máximo
+saque máximo
+inserte 8
+saque máximo
+saque máximo

@@ -1,0 +1,100 @@
+Color
+
+3
+3
+0 1
+1 2
+2 0
+3
+2
+0 1
+1 2
+9
+8
+0 1
+0 2
+0 3
+0 4
+0 5
+0 6
+0 7
+0 8
+0
+
+Arcos min-max
+
+10
+1 17
+5 13
+7 12
+5 17
+5 12
+2 17
+1 18
+8 13
+2 15
+5 29
+
+Python 2.7
+
+3 3
+4 4
+5 5
+6 6
+7 7
+8 8
+9 9
+61 61
+
+Printer
+
+3
+1 0
+5
+4 2
+1 2 3 4
+6 0
+1 1 9 1 1 1
+
+
+1
+4 2
+1 2 3 4
+
+
+def modify_queue(queue):
+    time = 0
+    while queue:
+        if queue[0][1] == find_max_el(queue):
+            time += 1
+            if queue[0][0] == 9999:
+                break
+            del queue[0]
+        else:
+            temp = queue[0]
+            del queue[0]
+            queue.append(temp)
+    print(time)
+
+
+def find_max_el(queue):
+    max_el = -math.inf
+    for el in queue:
+        if el[1] > max_el:
+            max_el = el[1]
+    return max_el
+
+
+def main_1():
+    n = int(stdin.readline().strip())
+    for index in range(n):
+        jobs, index = tuple(map(int, stdin.readline().strip().split()))
+        lista = list(map(int, stdin.readline().strip().split()))
+        temp = []
+        for index in range(len(lista)):
+            if index == index:
+                t = (9999, lista[index])
+            else:
+                t = (index, lista[index])
+            temp += [t]
+        modify_queue(temp)

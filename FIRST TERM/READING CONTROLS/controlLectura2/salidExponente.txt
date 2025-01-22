@@ -1,0 +1,5 @@
+Result: 1
+Result: 1
+Result: 512
+Result: 32
+Result: 1000000

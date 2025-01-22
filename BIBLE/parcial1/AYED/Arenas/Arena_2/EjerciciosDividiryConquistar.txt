@@ -1,0 +1,80 @@
+Tomar stdin esta importado.
+
+
+1. Dado un arreglo de N enteros, cuyos valores van en decremento y luego incremento encontrar el menor numero del arreglo
+
+def minimo():
+    N = map(int, stdin.readline().split().split)
+    return min(N)
+
+2. Dado un arreglo de N-1 enteros ordenados, cuyos valores estan en el rango de 1 a N, encontrar el entero faltante dado que un de ellos no esta presente en el arreglo.
+
+def missing():
+    n = map(int, stdin.readline().split().split)
+    count = 1
+    resp = "nothing"
+    for index in range(len(n)):
+        if count != n[index]:
+            resp = index - 1
+        count += 1
+    return resp
+
+3. Diseñe un algoritmo D&Q para calcular el exponente de un número a^n.
+    Debido a la falta de informacion el programa funcionara de esta forma:
+
+    Se nos entrega un numero a el resultado de elevarlo a un n, el programa mediante D&Q encuentra ese n:
+
+def recExp(base, result, exp):
+    if result == 1:
+        return exp
+    else:
+        return exponente(base, result/base, exp + 1)
+
+
+def main():
+    exp = 0 # Se asume como 0 el exponente inicial y va aumentando hasta dar con el numero requerido
+    base, result = stdin.readline().sptrip
+    base, result = int(base), int(exp)
+    base, result = min(num, result) , max(num, result)
+    print(recExp(num, base, exp))
+
+4. Aplicar mergesort para ordenar "ALGORITMO" en orden alfabético.
+
+def merge(A,B):
+    indexLeft, indexRight, result = 0,0, []
+    while indexLeft < len(A) and indexRight < len(B):
+        elementLeft, elementRight = A[indexLeft], B[indexRight]
+        result.append(min(elementRight, elementLeft))
+        indexLeft = indexLeft + 1 if elementLeft < elementRight else indexLeft
+        indexRight = indexRight + 1 if elementRight <= elementLeft else indexRight
+    return result + (A[indexLeft:] if indexLeft < len(A) else B[indexRight:])
+
+def mergeSort(A):
+    if len(A) == 1:
+        return A
+    halfCut = len(A)//2
+    result = merge(mergeSort(A[:halfCut]), mergeSort(A[halfCut:]))
+    return result
+
+def main():
+    string = list(stdin.readline().split())
+    print(mergeSort(A))
+
+5. Dado un número X, encontrar el menor número N tal que la suma de los bits de cada número dede 1 hasta N sea al menos X.
+
+def binary(n):
+    return [] if n < 1 else binary(n // 2) + [n % 2]
+
+def sumBits(count):
+    Bsum = sum(binary(count))
+    return Bsum
+
+def main():
+    X = int(stdin.readline().strip())
+    count = 0
+    summ = 0
+    while summ < X:
+        count += 1
+        summ += sumBits(count)
+    print(count)
+

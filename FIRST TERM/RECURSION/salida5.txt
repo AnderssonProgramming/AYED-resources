@@ -1,0 +1,3 @@
+La representación binaria de 5 es 101
+La representación binaria de 0 es 0
+La representación binaria de 123 es 1111011

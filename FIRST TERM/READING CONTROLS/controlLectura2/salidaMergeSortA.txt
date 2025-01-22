@@ -1,0 +1,4 @@
+Sorted word by alphabetic order:  ['A', 'G', 'I', 'L', 'M', 'O', 'O', 'R', 'T']
+Sorted word by alphabetic order:  ['D', 'E', 'O', 'P', 'R']
+Sorted word by alphabetic order:  ['A', 'D', 'E', 'N', 'N', 'O', 'R', 'S', 'S']
+Sorted word by alphabetic order:  ['A', 'D', 'E', 'Y']

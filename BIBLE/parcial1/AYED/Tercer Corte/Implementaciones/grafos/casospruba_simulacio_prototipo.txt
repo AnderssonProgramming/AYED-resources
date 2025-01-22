@@ -1,0 +1,85 @@
+PROTOTIPO
+input
+1
+4 5
+0 2
+2 1
+2 3
+1 2
+3 0
+2
+4 5
+0 2
+2 1
+2 3
+1 2
+3 0
+funcionalidad output
+acceda a las funcionalidades 1 para domiciliario ó 2 para ubicar la central de abastos
+1
+querido domiciliario diseñemos la ruta para entregar los pedidos
+introdusca sus pedidos y caminos tenieniendo en cuanta que 0 es la tienda de distrubucion 
+4 5
+0 2
+2 1
+2 3
+1 2
+3 0
+el trayecto que tiene que seguir el domiciliario esta dado por los vertices con distancias [0, 1, 2, 1, 2] ['tienda', 'Cliente2', 'Cliente1', 'Cliente3', 'Cliente2', 'Cliente1', 'Cliente3']
+2
+introdusca los los mapas de vertices de distribucion posibles
+4 5
+0 2
+2 1
+2 3
+1 2
+3 0
+las centrales de abastos pueden ser [0]
+
+SIMULACION
+============================== Simulacion Rutas Domicilios =======================
+entran  3 pedidos y los caminos son
+tienda  cliente1 
+tienda  cliente2 
+tienda  cliente3 
+cliente1 tienda 
+cliente1 cliente3 
+cliente3 tienda 
+cliente3 cliente2 
+cliente2 tienda
+-------------matriz de adyacencia------------
+0111
+1001
+1000
+1010
+------------------- Ruta de domicilios ---------------------
+0 {'value': 'tienda', 'color': 'black', 'distancia': 0, 'phi': None}
+1 {'value': 'Cliente1', 'color': 'black', 'distancia': 1, 'phi': 0}
+2 {'value': 'Cliente2', 'color': 'black', 'distancia': 1, 'phi': 0}
+3 {'value': 'Cliente3', 'color': 'black', 'distancia': 1, 'phi': 0}
+==============================================================================================
+entran  3 pedidos y los caminos son
+tienda  cliente 
+cliente1 cliente2 
+cliente2 cliente1 
+cliente cliente23 
+cliente3 tienda
+-------------matriz de adyacencia------------
+0010
+0010
+0101
+1000
+------------------- Ruta de domicilios ---------------------
+0 {'value': 'tienda', 'color': 'black', 'distancia': 0, 'phi': None}
+1 {'value': 'Cliente1', 'color': 'black', 'distancia': 2, 'phi': 'Cliente2'}
+2 {'value': 'Cliente2', 'color': 'black', 'distancia': 1, 'phi': 'tienda'}
+3 {'value': 'Cliente3', 'color': 'black', 'distancia': 2, 'phi': 'Cliente2'}
+el trayecto que tiene que seguir el domiciliario esta dado por los vertices con distancias [0, 1, 2, 1, 2] ['tienda', 'Cliente2', 'Cliente1', 'Cliente3', 'Cliente2', 'Cliente1', 'Cliente3']
+------------------- CENTRAL DE ABASTOS ---------------------
+0 {'color': 'black', 'distance': 1, 'final_time': 8, 'phi': None}
+1 {'color': 'black', 'distance': 3, 'final_time': 4, 'phi': 2}
+2 {'color': 'black', 'distance': 2, 'final_time': 7, 'phi': 0}
+3 {'color': 'black', 'distance': 5, 'final_time': 6, 'phi': 2}
+las centrales de abastos pueden ser [0]
+
+Process finished with exit code 0

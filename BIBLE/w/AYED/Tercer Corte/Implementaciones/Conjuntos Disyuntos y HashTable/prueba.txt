@@ -1,0 +1,7 @@
+Los pedidos se ingresan de la siguiente forma:
+Juan 20/11/20-20:00
+Pipe 21/11/20-13:00
+Camilo 21/11/20-15:30
+Fran 22/11/20-11:00
+Paco 22/11/20-10:46
+Diego 24/11/20-16:10

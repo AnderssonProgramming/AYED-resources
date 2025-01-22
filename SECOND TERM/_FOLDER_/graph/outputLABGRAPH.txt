@@ -1,0 +1,205 @@
+Para n = 3
+===================== ADJ List =======================
+0 ['2']
+1 []
+2 []
+
+===================== ADJ Matrix =======================
+0 0 1
+0 0 0
+0 0 0
+
+====================== BFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '1'}
+2 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->2'}
+
+====================== DFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 1, 'parent': None, 'final': 4, 'path': '0'}
+1 --> {'color': 'black', 'distance': 5, 'parent': None, 'final': 6, 'path': '1'}
+2 --> {'color': 'black', 'distance': 2, 'parent': 0, 'final': 3, 'path': '0-->2'}
+
+====================== Connected components spread ===================
+====================== Connected component found ===========================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '1'}
+2 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->2'}
+
+
+Para n = 2
+===================== ADJ List =======================
+0 ['1']
+1 []
+
+===================== ADJ Matrix =======================
+0 1
+0 0
+
+====================== BFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->1'}
+
+====================== DFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 1, 'parent': None, 'final': 4, 'path': '0'}
+1 --> {'color': 'black', 'distance': 2, 'parent': 0, 'final': 3, 'path': '0-->1'}
+
+====================== Connected components spread ===================
+====================== Connected component found ===========================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->1'}
+
+
+Para n = 8
+===================== ADJ List =======================
+0 ['1', '7', '4', '2']
+1 ['5', '4', '7', '3']
+2 ['4', '7', '5']
+3 ['4', '7']
+4 ['6', '7']
+5 ['7']
+6 ['7']
+7 []
+
+===================== ADJ Matrix =======================
+0 1 1 0 1 0 0 1
+0 0 0 1 1 1 0 1
+0 0 0 0 1 1 0 1
+0 0 0 0 1 0 0 1
+0 0 0 0 0 0 1 1
+0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0
+
+====================== BFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->1'}
+2 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->2'}
+3 --> {'color': 'black', 'distance': 2, 'parent': 1, 'path': '0-->1-->3'}
+4 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->4'}
+5 --> {'color': 'black', 'distance': 2, 'parent': 1, 'path': '0-->1-->5'}
+6 --> {'color': 'black', 'distance': 2, 'parent': 4, 'path': '0-->4-->6'}
+7 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->7'}
+
+====================== DFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 1, 'parent': None, 'final': 16, 'path': '0'}
+1 --> {'color': 'black', 'distance': 2, 'parent': 0, 'final': 15, 'path': '0-->1'}
+2 --> {'color': 'black', 'distance': 5, 'parent': 4, 'final': 12, 'path': '0-->1-->3-->4-->2'}
+3 --> {'color': 'black', 'distance': 3, 'parent': 1, 'final': 14, 'path': '0-->1-->3'}
+4 --> {'color': 'black', 'distance': 4, 'parent': 3, 'final': 13, 'path': '0-->1-->3-->4'}
+5 --> {'color': 'black', 'distance': 6, 'parent': 2, 'final': 11, 'path': '0-->1-->3-->4-->2-->5'}
+6 --> {'color': 'black', 'distance': 8, 'parent': 7, 'final': 9, 'path': '0-->1-->3-->4-->2-->5-->7-->6'}
+7 --> {'color': 'black', 'distance': 7, 'parent': 5, 'final': 10, 'path': '0-->1-->3-->4-->2-->5-->7'}
+
+====================== Connected components spread ===================
+====================== Connected component found ===========================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->1'}
+2 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->2'}
+3 --> {'color': 'black', 'distance': 2, 'parent': 1, 'path': '0-->1-->3'}
+4 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->4'}
+5 --> {'color': 'black', 'distance': 2, 'parent': 1, 'path': '0-->1-->5'}
+6 --> {'color': 'black', 'distance': 2, 'parent': 4, 'path': '0-->4-->6'}
+7 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->7'}
+
+
+Para n = 7
+===================== ADJ List =======================
+0 ['1', '4', '2']
+1 ['2', '5', '4']
+2 ['4', '6']
+3 ['4', '5']
+4 ['6', '5']
+5 ['6']
+6 []
+
+===================== ADJ Matrix =======================
+0 1 1 0 1 0 0
+0 0 1 0 1 1 0
+0 0 0 0 1 0 1
+0 0 0 0 1 1 0
+0 0 0 0 0 1 1
+0 0 0 0 0 0 1
+0 0 0 0 0 0 0
+
+====================== BFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->1'}
+2 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->2'}
+3 --> {'color': 'black', 'distance': 2, 'parent': 4, 'path': '0-->4-->3'}
+4 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->4'}
+5 --> {'color': 'black', 'distance': 2, 'parent': 1, 'path': '0-->1-->5'}
+6 --> {'color': 'black', 'distance': 2, 'parent': 2, 'path': '0-->2-->6'}
+
+====================== DFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 1, 'parent': None, 'final': 14, 'path': '0'}
+1 --> {'color': 'black', 'distance': 2, 'parent': 0, 'final': 13, 'path': '0-->1'}
+2 --> {'color': 'black', 'distance': 3, 'parent': 1, 'final': 12, 'path': '0-->1-->2'}
+3 --> {'color': 'black', 'distance': 5, 'parent': 4, 'final': 10, 'path': '0-->1-->2-->4-->3'}
+4 --> {'color': 'black', 'distance': 4, 'parent': 2, 'final': 11, 'path': '0-->1-->2-->4'}
+5 --> {'color': 'black', 'distance': 6, 'parent': 3, 'final': 9, 'path': '0-->1-->2-->4-->3-->5'}
+6 --> {'color': 'black', 'distance': 7, 'parent': 5, 'final': 8, 'path': '0-->1-->2-->4-->3-->5-->6'}
+
+====================== Connected components spread ===================
+====================== Connected component found ===========================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->1'}
+2 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->2'}
+3 --> {'color': 'black', 'distance': 2, 'parent': 4, 'path': '0-->4-->3'}
+4 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->4'}
+5 --> {'color': 'black', 'distance': 2, 'parent': 1, 'path': '0-->1-->5'}
+6 --> {'color': 'black', 'distance': 2, 'parent': 2, 'path': '0-->2-->6'}
+
+
+Para n = 5
+===================== ADJ List =======================
+0 ['3']
+1 ['3', '4']
+2 ['4']
+3 []
+4 []
+
+===================== ADJ Matrix =======================
+0 0 0 1 0
+0 0 0 1 1
+0 0 0 0 1
+0 0 0 0 0
+0 0 0 0 0
+
+====================== BFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 2, 'parent': 3, 'path': '0-->3-->1'}
+2 --> {'color': 'black', 'distance': 4, 'parent': 4, 'path': '0-->3-->1-->4-->2'}
+3 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->3'}
+4 --> {'color': 'black', 'distance': 3, 'parent': 1, 'path': '0-->3-->1-->4'}
+
+====================== DFS ===================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 1, 'parent': None, 'final': 10, 'path': '0'}
+1 --> {'color': 'black', 'distance': 3, 'parent': 3, 'final': 8, 'path': '0-->3-->1'}
+2 --> {'color': 'black', 'distance': 5, 'parent': 4, 'final': 6, 'path': '0-->3-->1-->4-->2'}
+3 --> {'color': 'black', 'distance': 2, 'parent': 0, 'final': 9, 'path': '0-->3'}
+4 --> {'color': 'black', 'distance': 4, 'parent': 1, 'final': 7, 'path': '0-->3-->1-->4'}
+
+====================== Connected components spread ===================
+====================== Connected component found ===========================
+===================== Results =======================
+0 --> {'color': 'black', 'distance': 0, 'parent': None, 'path': '0'}
+1 --> {'color': 'black', 'distance': 2, 'parent': 3, 'path': '0-->3-->1'}
+2 --> {'color': 'black', 'distance': 4, 'parent': 4, 'path': '0-->3-->1-->4-->2'}
+3 --> {'color': 'black', 'distance': 1, 'parent': 0, 'path': '0-->3'}
+4 --> {'color': 'black', 'distance': 3, 'parent': 1, 'path': '0-->3-->1-->4'}
+
+

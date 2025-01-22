@@ -1,0 +1,64 @@
+CutRodding.py
+from sys import stdin
+import.math
+
+#snake Case
+    # Variables: lowercase, se separan por _
+
+def find_max_Gain(log, config):
+        if log < min(config.keys())
+            return 0
+        max_gain = -math.inf
+        for long in config.keys():
+            if log >= long:
+                max_gain = max(max_gain, config[long] + find_max_Gain(log - long, config)
+        return max_gain
+
+
+# Generar dos funciones
+
+def findMaxGainM(log, config, M):
+    if log < min(config.keys()):
+        return 0
+
+
+
+
+def findMaxGainMemo(log, config, M):
+    if log in M.keys():
+        return M[log]
+    M[log] = findMaxGainM(log, config, M)
+
+
+def main():
+    config_amount = int(stdin.readline().strip())
+    config = {}
+    for index in ramge(config_amount):
+        long, gain = map(int, stdin.readline().strip().split)
+        config[long] = gain
+    logs = int(stdin.readline().strip())
+    for index in range(logs):
+        log = int(stdin.readline().strip())
+        print(find_max_gain(log, config))
+
+
+# 5 # Configuracion
+# 1 10
+# 20 24
+# 5 8
+# 4 3
+# 2 9
+# 10 Cuantos troncos va a cortar
+# 45
+
+
+c = {} # k --> V
+# Anita -> 3208186055
+# Pedro -> 3214324324
+# Juan  -> 5353132132
+
+c['Anita'] = '3208186055'
+c['Pedro'] = '3214324324'
+c['Juan'] = '5353132132'
+
+ print(c.keys(), c.values, c , c['Anita'])

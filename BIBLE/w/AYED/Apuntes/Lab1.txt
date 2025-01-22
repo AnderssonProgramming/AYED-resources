@@ -1,0 +1,20 @@
+Algoritmo universal de ordenamiento:
+
+Input:
+    Secuenda de elementos S = s_0, s_1, s_2, ....., s_n
+
+    S_i debe pertenecer a un conjunto ordenable-enumerable.
+
+Output:
+    Secuenca de elementos de S', que es una permutacion de S, con la propiedad, de que S_i ,S_(i+1)
+
+Implementaciones:
+    - InsertionSort -> Estrategia
+    "Funciona similar a como una persona organiza una mano de cartas"
+    [5, 2, 4, 1, 6, 3]
+    [2, 5, 4, 1, 6, 3]
+    [2, 4, 5, 1, 6, 3]
+    [1, 2, 4, 5, 6, 3]
+    [1, 2, 3, 4, 5, 6]
+
+Codigo.

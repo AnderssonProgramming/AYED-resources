@@ -1,0 +1,33 @@
+def main() # Esta es la funcion principal que imprime no la solucion
+    word = stdin.readline().strip() lee la linea de texto
+    while word:
+        print(funcionsolucion(word)) metemos la funcion para que se imprima y se ejectue
+        word = stdin.readline().strip() lee la linea de texto Para que se siga repitiendo
+
+if __name__=='__main__':
+    main()
+
+Se crea un txt con unicamente las entradas ejemplo input.txt
+
+*En la consola se ejectua*
+
+python funcionsolucion.py < input.txt > output.txt
+
+
+4 4
+*...
+....
+.*..
+....
+3 5
+**...
+.....
+.*...
+0 0
+3
+T T T F F T F T F
+
+
+2 2 2
+1 1 1 2
+1 1 2 1

@@ -1,0 +1,3 @@
+El Máximo Común Divisor (MCD) de 18 y 24 es 6
+El Máximo Común Divisor (MCD) de 5 y 0 es 5
+El Máximo Común Divisor (MCD) de 30 y 45 es 15

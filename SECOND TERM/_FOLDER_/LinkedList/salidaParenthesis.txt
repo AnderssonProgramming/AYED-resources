@@ -1,0 +1,4 @@
+Correcto
+Correcto
+Incorrecto, el primer paréntesis mal ubicado está en la posición 0
+Incorrecto, el primer paréntesis mal ubicado está en la posición 2

@@ -1,0 +1,3 @@
+La suma de los elementos entre los índices 1 y 2 es: -2
+La suma de los elementos entre los índices 1 y 3 es: 0
+La suma de los elementos entre los índices 2 y 4 es: 2
