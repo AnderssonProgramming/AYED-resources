@@ -1,0 +1,13 @@
+Para la entrada 'HDhdhdhdhdhd':
+Hay dos o más caracteres con igual cantidad máxima de repeticiones: ['H', 'D', 'h', 'd'] con 6 veces
+
+Para la entrada 'rfajkshfjdsjkljgj':
+El carácter que más se repite es: j
+Con un número de repeticiones de: 5
+
+Para la entrada 'AHJFGAISHHFJKLAjdSJKHG':
+Hay dos o más caracteres con igual cantidad máxima de repeticiones: ['H', 'J', 'H', 'H', 'J', 'j', 'H'] con 4 veces
+
+Para la entrada 'ASFGJKHASWJKRDFKaajk':
+Hay dos o más caracteres con igual cantidad máxima de repeticiones: ['A', 'K', 'A', 'K', 'K', 'a', 'k'] con 4 veces
+
